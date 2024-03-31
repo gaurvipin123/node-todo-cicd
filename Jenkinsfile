@@ -32,7 +32,7 @@ pipeline {
         }
         stage("deploy"){
             steps{
-                sh "docker run -d --name node-app-container node-app-test-new"
+                sh "docker run -d node-app-test-new"
                 echo 'deployment ho gayi'
             }
         }
