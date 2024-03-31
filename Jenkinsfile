@@ -48,12 +48,12 @@ pipeline {
                 if (currentBuild.result == "SUCCESS") {
                     emailSubject = "Pipeline Success: ${env.JOB_NAME} - Build #${env.BUILD_NUMBER}"
                     emailBody = "The pipeline run for ${env.JOB_NAME} - Build #${env.BUILD_NUMBER} was successful. You can view the details at ${env.BUILD_URL}"
-                    recipientEmail = "gaurvipin321@gmail.com"
+                    recipientEmail = "ananda.yashaswi@quokkalabs.com, vipinkumargaurmca09@gmail.com"
                 }
                 else {
                     emailSubject = "Pipeline Failure: ${env.JOB_NAME} - Build #${env.BUILD_NUMBER}"
                     emailBody = "The pipeline run for ${env.JOB_NAME} - Build #${env.BUILD_NUMBER} has failed. You can view the details at ${env.BUILD_URL}"
-                    recipientEmail = "gaurvipin321@gmail.com"
+                    recipientEmail = "ananda.yashaswi@quokkalabs.com, vipinkumargaurmca09@gmail.com"
                 }
 
                 emailext (
