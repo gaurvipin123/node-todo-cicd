@@ -4,12 +4,12 @@ services:
   web:
     image: "node-app-test-new:latest"
     deploy:
-      replicas: 1
+      replicas: 2
     ports:
       - "8000:8000"
-  web2:
-    image: "node-app-test-new:latest"
-    deploy:
-      replicas: 1
+  nginx:
+    image: "nginx:latest"
+    depends_on:
+      web
     ports:
-      - "8001:8000"
+      - "3000:3000"
