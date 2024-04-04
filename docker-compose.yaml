@@ -7,3 +7,9 @@ services:
       replicas: 1
     ports:
       - "8000:8000"
+  web2:
+    image: "node-app-test-new:latest"
+    deploy:
+      replicas: 1
+    ports:
+      - "8001:8000"
