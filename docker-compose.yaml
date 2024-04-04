@@ -4,6 +4,6 @@ services:
   web:
     image: "node-app-test-new:latest"
     deploy:
-      replicas: 2
+      replicas: 1
     ports:
       - "8000:8000"
